@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    h1
+    {
+        margin: auto;
+        width: 5em;
+        
+    }
+    table{
+        margin: auto;
+        border: 2px solid green;
+        background-image: linear-gradient(pink,rgb(255, 0, 102));
+        border: solid rgb(23, 225, 181) .6em;
+        border-radius:2em;
+    }
+    input{
+        min-width:100% ;
+        min-height: 15vh;
+        text-align: right;
+        font-size: 2em;
+        border-radius: 1em;
+    }
+    button{
+        min-height: 5em; 
+        min-width: 5em;
+        background-color: rgb(157, 144, 144);
+        border-radius: 50%;
+        font-size: 1em;
+    }
+    #mul
+    {
+        background-color: rgba(16, 100, 255, 0.648);
+    }
+    #dif
+    {
+        background-color: rgba(215, 111, 51, 0.84);
+    }
+    #rem
+    {
+        background-color: rgb(126, 195, 22);
+    }
+    #div
+    {
+        background-color: rgb(127, 37, 211);
+    }
+    #equ
+    {
+        background-color: rgb(255, 0, 81);
+    }
+    #rdouble{
+        min-width: 10.1em;
+        border-radius: 1em;
+    }
+    #cdouble
+    {
+        min-height: 10.1em;
+        background-color: orange;
+        border-radius: 1em;
+    }
+
+</style>
+<body>
+    <h1>Calculator</h1>
+    <table>
+        <tr>
+            <td colspan="6" ><input type="text" class="display"></td></tr>
+        <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button id="rem">C</button></td>
+        </tr>
+        <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button id="dif">-</button></td>
+        </tr>
+        <tr>
+            <td><button>3</button></td>
+            <td><button>2</button></td>
+            <td><button>1</button></td>
+            <td><button id="mul">*</button></td>
+        </tr>
+        <tr>
+            <td><button>0</button></td>
+            <td colspan="2"><button id="rdouble">00</button></td>
+            <td rowspan="2"><button id="cdouble">+</button></td>
+        </tr>
+        <tr >
+            <td><button>.</button></td>
+            <td><button  id="div">/</button></td>
+            <td ><button id="equ">=</button></td>
+        </tr>
+    </table>
+    <script src="index.js">
+    </script>
+</body>
+</html>
