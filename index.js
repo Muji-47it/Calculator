@@ -7,7 +7,7 @@ let screenvalue='';
                 console.log('muji', buttontext);
                 if(buttontext=='C')
                 {
-                    screenvalue='0';
+                    screenvalue='';
                     Display.value=screenvalue; 
                 }
                 else if(buttontext=='='){
